@@ -1,0 +1,78 @@
+.header {
+    background: $color-surface;
+    border-bottom: 1px solid $color-border;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        height: 72px;
+    }
+
+    &__logo {
+        font-size: 28px;
+        font-weight: 800;
+        color: $color-text;
+    }
+}
+
+.main {
+    padding: 40px 0 64px;
+}
+
+.footer {
+    padding: 24px 0;
+    font-size: 14px;
+    color: $color-muted;
+    background: $color-surface;
+    border-top: 1px solid $color-border;
+}
+
+.section {
+    margin-bottom: 56px;
+
+    &__head {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        font-size: 28px;
+    }
+}
+
+.page-head {
+    margin-bottom: 24px;
+
+    &__title {
+        font-size: 36px;
+
+        @include media-up(md) {
+            font-size: 44px;
+        }
+    }
+
+    &__lead {
+        max-width: 720px;
+        margin: 12px 0 0;
+        font-size: 18px;
+        color: $color-muted;
+    }
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap;
+
+    @include media-up(sm) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media-up(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

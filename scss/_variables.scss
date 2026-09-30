@@ -1,0 +1,21 @@
+$color-bg: #f5f6fa;
+$color-surface: #fff;
+$color-text: #1f2430;
+$color-muted: #6b7280;
+$color-primary: #3b5bdb;
+$color-primary-dark: #2f49b0;
+$color-border: #e3e6ee;
+
+$font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+$container-width: 1140px;
+$gap: 24px;
+$radius: 12px;
+$shadow: 0 4px 20px rgba(31, 36, 48, .06);
+$transition: .2s ease;
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 1024px,
+);
